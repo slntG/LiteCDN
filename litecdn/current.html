@@ -367,8 +367,198 @@
 
 <!-- Hosting Section -->
 <div id="hosting" class="pricing-section" style="display: none;">
-    <!-- Контент для Hosting (копия контента CDN) -->
-    <!-- ... -->
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+        @import url(https://fonts.googleapis.com/css?family=Montserrat:800);
+        .snip1276 {
+            font-family: 'Raleway', Arial, sans-serif;
+            color: #000000;
+            text-align: center;
+            font-size: 16px;
+            width: 100%;
+            max-width: 1000px;
+            margin: 50px 10px 10px;
+        }
+        .snip1276 .plan {
+            margin: 0;
+            width: 25%;
+            position: relative;
+            float: left;
+            overflow: hidden;
+            background-color: #e6e6e6;
+            border: 5px solid #1e1e1e;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+        .snip1276 .plan:hover i,
+        .snip1276 .plan.hover i {
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+        .snip1276 * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all 0.25s ease-out;
+            transition: all 0.25s ease-out;
+        }
+        .snip1276 header {
+            position: relative;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            padding: 20px 20px;
+        }
+        .snip1276 header:after {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 24px 150px 0 150px;
+            border-color: #1e1e1e transparent transparent transparent;
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+        .snip1276 .plan-title {
+            top: 0;
+            font-weight: 500;
+            margin: 8px 0;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        .snip1276 .plan-cost {
+            margin: 8px 0 0;
+        }
+        .snip1276 .plan-price {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 800;
+            font-size: 2em;
+            color: #ffffff;
+        }
+        .snip1276 .plan-type {
+            opacity: 0.8;
+            color: #ffffff;
+            font-size: 0.7em;
+            text-transform: uppercase;
+        }
+        .snip1276 .plan-features {
+            padding: 40px 0 0;
+            margin: 0;
+            list-style: outside none none;
+            font-size: 0.8em;
+        }
+        .snip1276 .plan-features li {
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 10px 5%;
+            font-weight: 500;
+        }
+        .snip1276 .plan-features li:nth-child(even) {
+            background: rgba(0, 0, 0, 0.08);
+        }
+        .snip1276 .plan-features i {
+            margin-right: 8px;
+            opacity: 0.4;
+        }
+        .snip1276 .featured {
+            margin-top: -10px;
+            border: 5px solid #927DFA;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+        .snip1276 .featured header {
+            background-color: #927DFA;
+        }
+        .snip1276 .featured header:after {
+            border-color: #927DFA transparent transparent transparent;
+        }
+        @media only screen and (max-width: 767px) {
+            .snip1276 .plan {
+                width: 50%;
+            }
+            .snip1276 .plan-title,
+            .snip1276 .plan-select a {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            .snip1276 .featured {
+                margin-top: 0;
+            }
+        }
+        @media only screen and (max-width: 440px) {
+            .snip1276 .plan {
+                width: 100%;
+            }
+        }
+
+        /* Demo purposes only */
+        body {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+    <div class="snip1276">
+        <!-- Plan 1: Year+ -->
+        <div class="plan">
+            <header>
+                <h4 class="plan-title">Year+</h4>
+                <div class="plan-cost"><span class="plan-price">196 ₽</span><span class="plan-type">/мес</span></div>
+            </header>
+            <ul class="plan-features">
+                <li><i class="ion-checkmark"> </i>1 сайт</li>
+                <li><i class="ion-checkmark"> </i>10 ГБ на быстрых NVMe-дисках</li>
+                <li><i class="ion-checkmark"> </i>1 база данных</li>
+                <li><i class="ion-checkmark"> </i>Бесплатный SSL-сертификат</li>
+                <li><i class="ion-checkmark"> </i>Домен .RU/.РФ в подарок!</li>
+            </ul>
+        </div>
+
+        <!-- Plan 2: Optimo+ -->
+        <div class="plan">
+            <header>
+                <h4 class="plan-title">Optimo+</h4>
+                <div class="plan-cost"><span class="plan-price">274 ₽</span><span class="plan-type">/мес</span></div>
+            </header>
+            <ul class="plan-features">
+                <li><i class="ion-checkmark"> </i>10 сайтов</li>
+                <li><i class="ion-checkmark"> </i>30 ГБ на быстрых NVMe-дисках</li>
+                <li><i class="ion-checkmark"> </i>Безлимитные базы данных</li>
+                <li><i class="ion-checkmark"> </i>Бесплатный SSL-сертификат</li>
+                <li><i class="ion-checkmark"> </i>Домен .RU/.РФ в подарок!</li>
+            </ul>
+        </div>
+
+        <!-- Plan 3: Century+ -->
+        <div class="plan featured">
+            <header>
+                <h4 class="plan-title">Century+</h4>
+                <div class="plan-cost"><span class="plan-price">397 ₽</span><span class="plan-type">/мес</span></div>
+            </header>
+            <ul class="plan-features">
+                <li><i class="ion-checkmark"> </i>25 сайтов</li>
+                <li><i class="ion-checkmark"> </i>40 ГБ на быстрых NVMe-дисках</li>
+                <li><i class="ion-checkmark"> </i>Безлимитные базы данных</li>
+                <li><i class="ion-checkmark"> </i>Бесплатный SSL-сертификат</li>
+                <li><i class="ion-checkmark"> </i>Домен .RU/.РФ в подарок!</li>
+            </ul>
+        </div>
+
+        <!-- Plan 4: Millennium+ -->
+        <div class="plan">
+            <header>
+                <h4 class="plan-title">Millennium+</h4>
+                <div class="plan-cost"><span class="plan-price">598 ₽</span><span class="plan-type">/мес</span></div>
+            </header>
+            <ul class="plan-features">
+                <li><i class="ion-checkmark"> </i>50 сайтов</li>
+                <li><i class="ion-checkmark"> </i>50 ГБ на быстрых NVMe-дисках</li>
+                <li><i class="ion-checkmark"> </i>Безлимитные базы данных</li>
+                <li><i class="ion-checkmark"> </i>Бесплатный SSL-сертификат</li>
+                <li><i class="ion-checkmark"> </i>Домен .RU/.РФ в подарок!</li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 
